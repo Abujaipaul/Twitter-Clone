@@ -1,0 +1,596 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid_container{
+  max-width: 1300px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+}
+/* styling the aside nav */
+.aside_icon{
+    grid-column: 1/4;
+    padding: 20px 35px;
+    position: fixed;
+}
+.logo img{
+    width: 25px;
+    margin-left: 5px;
+}
+.icon{
+    margin-top: 25px;
+}
+.icon img{
+    width: 22px;
+}
+.icon p{
+    font-size: 18px;
+}
+
+.icon1{
+    display: grid;
+    grid-template-columns: 40px 40px;
+    align-items: center;
+    margin-top: 25px;
+}
+.icon1:hover{
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.icon1 img{
+    margin: 0 !important;
+}
+#home{
+    font-weight: bold;
+    font-size: 20px;
+}
+#home_icon{
+     width: 28px;
+}
+#more_icon{
+     border: 2px solid black;
+     border-radius: 20px;
+}
+.asideicon_btn a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #1da1f2;
+    padding: 17px 80px;
+    border-radius: 30px;
+    font-weight: bold;
+} 
+.asideicon_btn{
+    margin-top: 35px;
+}
+.asideicon_profile{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+.asideicon_profile:hover{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+.asideicon_profile img:nth-child(1){
+   width: 40px;
+   border-radius: 20px;
+}
+.asideicon_text{
+    margin: 0px 12px;
+}
+.asideicon_text p{
+    padding: 1px 0px;
+    opacity: 0.5;
+}
+#thick{
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* styling the main */
+.main{
+    grid-column: 4/10;
+    border: 1px solid black;
+}
+.header_text{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.header_text p:nth-child(1){
+    justify-self: center;
+    padding-bottom:10px;
+    border-bottom: 5px solid #1da1f2;
+    border-radius: 3px;
+    font-weight: 800;
+}
+.header_text p:nth-child(2){
+    justify-self: right;
+    opacity: 0.5;
+}
+.header_text p:nth-child(2):hover{
+    opacity: 1;
+}
+.header_text img{
+    justify-self: right;
+}
+.mainprofile_form{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px 5px 20px;
+}
+.mainprofile_form img{
+    width:40px;
+    border-radius: 20px;
+}
+#what{
+    padding-right: 330px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    border: none;
+    outline-color:#1da1f2 ;
+}
+
+.mainprofile_form2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border-bottom: 1px solid black;
+}
+.mainprofile_icon img{
+    margin: 0px 5px;
+}
+.mainprofile_icon img:nth-child(5){
+    opacity: 0.5;
+}
+.mainprofile_button a{
+    display: block;
+    margin-top: 8px;
+    color: white;
+    background-color: #1da1f2;
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+.mainprofile_button a:hover,
+.mainprofile_button a:checked{
+    opacity: 1;
+}
+.show_posts p{
+    color: #1da1f2;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 0px;
+}
+.show_posts p:hover{
+    font-weight: 800;
+}
+/* styling the main posts 1 & 3*/
+.post1_profile{
+    display: flex;
+    flex-direction: row;
+   padding: 15px 0px 5px 20px;
+}
+.post1_profile img:nth-of-type(1){
+    width: 35px;
+    height: 35px;
+   border-radius: 50%;
+}
+.post1_text p{
+   font-weight: 800;
+   font-size: 15px;
+   margin-left: 20px;
+}
+#text{
+    font-weight: normal;
+    margin-top: 3px;
+}
+#name{
+    font-weight: normal;
+    opacity: 0.5;
+}
+#dot{
+    display: inline-block;
+    width: 3px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0px 6px;
+}
+#date{
+    font-weight: normal;
+    opacity: 0.5;
+}
+.post1_profile img:nth-of-type(2){
+    margin-left: 255px;
+}
+
+.post1_image img{
+    width: 400px;
+    border-radius: 20px;
+    margin: 6px 75px;
+}
+.post1{
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+.post1:hover{
+    background-color: whitesmoke;
+}
+.post1_bottom{
+    display: flex;
+    flex-direction: row;
+    padding-left: 78px;
+    padding-top: 5px;
+}
+.post1_bottom img{
+    width: 14px;
+}
+.post1_bottom p{
+    font-size: 15px;
+    margin-left: 5px;
+}
+.comment, .retweet, .heart, .stats{
+    display: flex;
+    flex-direction: row;
+}
+.retweet{
+    margin: 0px 70px;
+}
+.stats{
+    margin: 0px 80px;
+}
+.beside{
+    margin-left: 10px;
+}
+.beside img:nth-of-type(2){
+    margin-left: 10px;
+}
+#more{
+    margin-left: 335px;
+}
+/* styling for post2 onana */
+.post2_profile{
+    display: flex;
+    flex-direction: row;
+   padding: 15px 0px 5px 20px;
+}
+.post2_profile img:nth-of-type(1){
+    width: 35px;
+    height: 35px;
+   border-radius: 50%;
+}
+.post2_text p{
+   font-weight: 800;
+   font-size: 15px;
+   margin-left: 20px;
+}
+#text{
+    font-weight: normal;
+    margin-top: 3px;
+}
+#name{
+    font-weight: normal;
+    opacity: 0.5;
+}
+#dot{
+    border:none ;
+}
+#dot img{
+    width: 15px;
+    height: 13px;
+}
+
+/* #dot{
+    display: inline-block;
+    width: 3px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0px 6px;
+} */
+#date{
+    font-weight: normal;
+    opacity: 0.5;
+    margin-left: 5px;
+}
+.post2_profile img:nth-of-type(2){
+    margin-left: 25px;
+}
+    /* styling the aside text */
+.aside_text{
+    grid-column: 10/13;
+}
+#search{
+    padding: 10px;
+    padding-left:40px;
+    padding-right: 70px;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    background-image: url(./icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: 15px;
+    margin: 10px 0px 10px 10px;
+}
+.premium{
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    margin: 10px 0px 10px 10px;
+}
+.premium h1{
+    font-size: 23px;
+}
+.premium p{
+    margin-top: 5px;
+}
+.premium a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 16px;
+    display: inline-block;
+}
+.premium a:hover{
+    font-weight: bold;
+}
+.trends{
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 10px 0px 10px 10px;
+}
+.trends h1{
+    font-size: 21px;
+}
+.align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.align p{
+    opacity: 0.5;
+}
+.trend1 p, .trend2 p, .trend3 p, .trend4 p, .trend5 p{
+    opacity: 0.5;
+}
+.trend1, .trend2, .trend3, .trend4, .trend5{
+    margin-top: 18px;
+}
+.trend1:hover, .trend2:hover, .trend3:hover, .trend4:hover, .trend5:hover{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.trends span{
+    font-weight: bold;
+}
+#show{
+    color: #1da1f2;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+#show:hover{
+    font-weight: bold;
+    color: #1da1f2;
+}
+/* footer */
+footer{
+    padding: 10px;
+    margin-top: 20px;
+}
+footer span{
+    font-size: 13px;
+    opacity: 0.7;
+}
+footer img{
+    width: 10px;
+}
+/* follow tab */
+.follow_box{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+}
+.follow_box h1{
+    font-size: 23px;
+    font-weight: bold;
+}
+.follow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.follow img:nth-child(1){
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.follow img:nth-child(2){
+    width: 15px;
+}
+#light{
+    opacity: 0.6;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size:14px;
+}
+.btn a:hover{
+    font-weight: bold;
+
+}
+.follow_text{
+    margin-left: 10px;
+}
+.btn{
+    margin-left: 70px;
+}
+.potter{
+    margin-left: 105px;
+}
+.ruth{
+    margin-left: 129px;
+}
+
+
+/* mobile styling */
+@media only screen and (max-width:400px){
+    .grid_container{
+        width: 400px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); 
+        max-width: fit-content;   
+      }
+    .icon p{
+        display: none;
+    }
+    .asideicon_btn a{
+        display: none;
+    }
+    .aside_icon{
+      padding: 18px 8px;
+      padding-bottom: 0px;
+    }
+    .asideicon_text{
+        display: none;
+    }
+    .aside_icon{
+        grid-column: 1/2;
+    }
+    .main{
+        grid-column: 2/9;
+        border-right: none;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .aside_text{
+        display: none;
+    }
+    .asideicon_profile{
+      display: none;
+    }
+    #what{
+      padding-left: 10px;
+      padding-right: 0px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      margin: 0px;
+    }
+    .logo img{
+        margin: 0px;
+    }
+    .post1_image img{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .post1_profile img:nth-of-type(2){
+        margin-left: 0px;
+    }
+    #more{
+        margin-left: 40px;
+    }
+    .post1_text p{
+        margin-left: 10px;
+    }
+    .post2_text p{
+        margin-left: 10px;
+    }
+    #oshimen{
+        padding-left: 3px;
+    }
+    .post2_profile{
+        padding-left: 10px;
+    }
+    #pottermore{
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .post1_bottom img{
+        width: 10px;
+        height:15px;
+    }
+    .retweet{
+        margin: 0px 20px;
+    }
+    .stats{
+        margin: 0px 20px;
+    }
+    .beside{
+        margin-left: 0px;
+    }
+    .beside img:nth-of-type(2){
+        margin-left: 3px;
+    }
+    .post1_bottom{
+        padding-left: 10px;
+    }
+    footer{
+        margin-top: 10px;
+    }
+    .mainprofile_form{
+        padding-left: 5px;
+    }
+    .mainprofile_form2{
+        justify-content:center;
+        padding-left: 0px;
+    }
+    .mainprofile_button a{
+     margin-left: 15px;
+    }
+    .post1_profile{
+        padding-left: 10px;
+    }
+    #oshimen1{
+       display: none;
+    }
+   
+    .main{
+        margin-right: 0px;
+    }    
+    .icon1 {
+        display: grid;
+        grid-template-columns: 28px;
+        align-items: center;
+        margin-top: 25px;
+        padding: 0px;
+    }
+    .post1_image img {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .odate{
+        display: none;
+    }
+    #oshipic{
+        width: 35px;
+    }
+    #oshimenadjust p{
+        margin-left: 4px !important;
+    }
+}
